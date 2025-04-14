@@ -31,3 +31,23 @@ def listar_alunos():
     alunos = cursor.fetchall()
     conn.close()
     return alunos
+
+
+def atualizar_aluno(id, nome, idade, curso):
+    conn = conectar()
+    cursor = conn.cursor()
+    cursor.execute('''
+        UPDATE alunos
+        SET nome = ?, idade = ?, curso = ?
+        WHERE id = ?
+    ''', (nome, idade, curso, id))
+    conn.commit()
+    conn.close()
+
+
+def remover_aluno(id):
+    conn = conectar()
+    cursor = conn.cursor()
+    cursor.execute('DELETE FROM alunos WHERE id = ?', (id,))
+    conn.commit()
+    conn.close()
