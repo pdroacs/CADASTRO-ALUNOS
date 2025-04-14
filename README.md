@@ -6,11 +6,11 @@ Este projeto é um sistema simples de cadastro de alunos utilizando **Python** e
 
 ## 🧩 Funcionalidades
 
-- Cadastrar novos alunos
-- Listar todos os alunos cadastrados
-- Buscar aluno por ID
-- Atualizar informações de um aluno
-- Remover aluno do sistema
+- ✅ Cadastrar novos alunos  
+- 📋 Listar todos os alunos cadastrados  
+- 🔍 Buscar aluno por ID  
+- ✏️ Atualizar informações de um aluno (nome, idade ou curso)  
+- ❌ Remover aluno do sistema por ID
 
 ---
 
